@@ -1,6 +1,6 @@
 import jwt from "jsonwebtoken";
 
- export const webToken = (req,res,next)=>{
+ export const isAuthoriztion = (req,res,next)=>{
 
     const token = req.headers.authorization.split(' ')[1];
      console.log(token);
